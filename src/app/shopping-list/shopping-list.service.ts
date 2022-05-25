@@ -1,5 +1,4 @@
 import { EventEmitter, Injectable } from '@angular/core';
-
 import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable({
@@ -37,4 +36,5 @@ export class ShoppingListService {
     });
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
+
 }
