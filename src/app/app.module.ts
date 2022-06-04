@@ -27,6 +27,7 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     RecipesModule,
     ShoppingListModule,
     NoopAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
