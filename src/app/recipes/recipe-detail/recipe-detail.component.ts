@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Data } from '@angular/router';
 
 import { Ingredient } from 'src/app/shared/ingredient.model';

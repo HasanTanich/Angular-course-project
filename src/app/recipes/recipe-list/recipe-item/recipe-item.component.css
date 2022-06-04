@@ -1,6 +1,7 @@
 .img-responsive {
-  max-height: 70px;
   border-radius: 6px;
+  max-width: 9vh;
+  width: 100%;
 }
 
 .pull-left {

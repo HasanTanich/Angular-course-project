@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
   ],
   imports: [
     CommonModule,
+    MatSnackBarModule,
     FormsModule
   ]
 })

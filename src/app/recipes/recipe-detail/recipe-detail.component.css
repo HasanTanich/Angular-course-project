@@ -4,6 +4,8 @@
 
 .img-responsive {
   border-radius: 16px;
+  max-width: 60%;
+  height: 50%;
 }
 
 ul {

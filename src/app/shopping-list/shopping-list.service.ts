@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable({
@@ -14,7 +15,7 @@ export class ShoppingListService {
     new Ingredient('Sugar', 20),
   ];
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) { }
 
   getIngredients() {
     return this.ingredients.slice();
@@ -28,7 +29,7 @@ export class ShoppingListService {
   addIngredients(ingredients: Ingredient[]) {
     this.ingredients.push(...ingredients);
     this.ingredientsChanged.emit(this.ingredients.slice());
-    alert("Recipe ingredients added to your shopping list");
+    this._snackBar.open("Ingredients added to shopping list!");
   }
 
   deleteIngredient(ingredient) {

@@ -31,4 +31,5 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
